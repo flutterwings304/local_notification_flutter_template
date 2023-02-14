@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855359653775",
+    "project_id": "local-notification-app",
+    "storage_bucket": "local-notification-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855359653775:android:6d92b53d50de68587bedfa",
+        "android_client_info": {
+          "package_name": "com.flutterwings.local_notification_flutter_template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855359653775-qdgibt94ubldojjhr7jsmpmirfitslpi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYpm-2cRX7Ah94vXKa-iazU_6SbaG80tE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855359653775-qdgibt94ubldojjhr7jsmpmirfitslpi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

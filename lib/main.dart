@@ -1,11 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 
 import 'api/local_notifications.dart';
+import 'firebase_options.dart';
 
 Future main() async {
   FirebaseMessaging.onBackgroundMessage(backgroundHandler);
-
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -23,8 +27,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     LocalNotificationService.initialize();
-    LocalNotificationService.messageListener(context);
-    FirebaseMessaging.onBackgroundMessage(backgroundHandler);
+
     FirebaseMessaging.instance.getInitialMessage().then((message) {
       print("Initial Message ${message.toString()}");
     });
@@ -37,6 +40,7 @@ class _MyAppState extends State<MyApp> {
         LocalNotificationService.display(event);
       }
     });
+    LocalNotificationService.messageListener(context);
   }
 
   @override
