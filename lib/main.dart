@@ -6,6 +6,7 @@ import 'api/local_notifications.dart';
 import 'firebase_options.dart';
 
 Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   FirebaseMessaging.onBackgroundMessage(backgroundHandler);
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

@@ -3,13 +3,13 @@ importScripts('https://www.gstatic.com/firebasejs/8.4.1/firebase-messaging.js');
 
    /*Update with yours config*/
   const firebaseConfig = {
-   apiKey: "YOur Key-EW_U6NZU-A",
-   authDomain: "flutter-notification-test-gfg.firebaseapp.com",
-   projectId: "flutter-notification-tes-fec9d",
-   storageBucket: "flutter-dsd-tes-fec9d.gfg.com",
-   messagingSenderId: "263307381024",
-   appId: "1:263307381024:web:dsds",
-   measurementId: "G-dsada"
+  apiKey: 'AIzaSyBZZhWWdNPcRgtWQro2YI0a09mqFuJNfww',
+    appId: '1:855359653775:web:d53aae420bfcc1227bedfa',
+    messagingSenderId: '855359653775',
+    projectId: 'local-notification-app',
+    authDomain: 'local-notification-app.firebaseapp.com',
+    storageBucket: 'local-notification-app.appspot.com',
+    measurementId: 'G-TE71QBD1R3',
  };
   firebase.initializeApp(firebaseConfig);
   const messaging = firebase.messaging();
